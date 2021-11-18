@@ -39,6 +39,18 @@ function getEvenSum(max = 10) {
 
 4. Write a function named `getOddSum` that accepts a parameter `max`. Return the sum of all odd numbers. The value of max should default to 10.
 
+```js
+function getOddSum(max = 10) {
+  let oddSum = 0;
+  for (let i = 1; i <= max; i++) {
+    if (i % 2 == 0) {
+      oddSum += i;
+    }
+  }
+  return oddSum;
+}
+```
+
 5. Write a function named `getProductOfDigits` that accepts a parameter `num`. It returns the product of all the digits in the number.
 
 - If the input value is less than 0 return `not a valid input`
